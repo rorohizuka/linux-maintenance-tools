@@ -7,6 +7,7 @@ Small Bash utilities for basic Linux maintenance.
 - disc-usage-report.sh
 - cleanup-downloads.sh
 - log-cleaner.sh
+- system-health-report.sh
 -----
 
 # disc-usage-report.sh
@@ -65,3 +66,22 @@ chmod +x log-cleaner.sh
 
 If no .log files exist,nothing is moved, but the cleanup action is still recorded.
 
+-------
+
+# system-health-report.sh
+
+## Overview
+
+This script displays basic Linux system health information.
+
+It shows:
+- uptime
+- disk usage
+- mamory usage
+- top memory processes
+- open ports
+
+## Usage
+````bash
+chmod +x system-health-report.sh
+./system-health-report.sh
