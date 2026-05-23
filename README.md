@@ -8,6 +8,7 @@ Small Bash utilities for basic Linux maintenance.
 - cleanup-downloads.sh
 - log-cleaner.sh
 - system-health-report.sh
+- ssh-hardening-check.sh
 -----
 
 # disc-usage-report.sh
@@ -85,3 +86,21 @@ It shows:
 ````bash
 chmod +x system-health-report.sh
 ./system-health-report.sh
+
+--------
+
+# ssh-hardening-check.sh
+
+## Overview 
+
+This script checks basic SSH security settings on Linux systems.
+
+- PermitRootLogin
+- PasswordAuthentication
+
+Also verifies that the SSH config file exists.
+
+## Usage
+````bash
+./ssh-hardening-check.sh
+
