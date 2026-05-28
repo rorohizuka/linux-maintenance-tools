@@ -9,6 +9,7 @@ Small Bash utilities for basic Linux maintenance.
 - log-cleaner.sh
 - system-health-report.sh
 - ssh-hardening-check.sh
+- servercheck.sh
 -----
 
 # disc-usage-report.sh
@@ -103,4 +104,29 @@ Also verifies that the SSH config file exists.
 ## Usage
 ````bash
 ./ssh-hardening-check.sh
+
+-------
+
+# servercheck.sh
+
+## Overview
+
+Simple Linux server monitoring script.
+
+Check whether a local server is responding on a specific port.
+
+Currently configured for Jellyfin
+(`localhost:8096`).
+
+## Usage
+````bash
+./servercheck.sh
+````
+## Future Ideas
+- Automatic process detection
+- Port scanner
+- Multi-service monitoring
+- Logging
+- Notifications
+
 
